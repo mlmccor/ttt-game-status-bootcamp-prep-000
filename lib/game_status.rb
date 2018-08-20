@@ -53,7 +53,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board).kind_of || full?(board) == true || draw?(board) == true
+  if won?(board).kind_of?(Array) || full?(board) == true || draw?(board) == true
     return true
   end
 end
