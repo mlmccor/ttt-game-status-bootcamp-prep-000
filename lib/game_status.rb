@@ -60,5 +60,5 @@ end
 
 def winner(board)
   ace=won?(board)
-  return ace[0]
+  return board[ace[0]]
 end
