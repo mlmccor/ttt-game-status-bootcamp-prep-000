@@ -53,5 +53,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board)
+  if won?(board).is_a(Array) || full?(board) == true || draw?(board) == true
+    return true
+  end
 end
