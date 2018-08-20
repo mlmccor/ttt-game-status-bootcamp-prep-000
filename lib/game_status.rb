@@ -63,5 +63,6 @@ def winner(board)
     ace=won?(board)
     return board[ace[0]]
   else
-    return nil
+    nil
+  end
 end
