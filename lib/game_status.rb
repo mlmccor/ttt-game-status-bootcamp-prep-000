@@ -59,7 +59,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == true
+  if won?(board).kind_of?(Array)
     ace=won?(board)
     return board[ace[0]]
   else
